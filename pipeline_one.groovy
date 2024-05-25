@@ -3,7 +3,7 @@ pipeline {
       stage {
         stage('Pull') {
             step {
-                git branch: 'main', changelog: false, credentialsId: 'classy-manoj', poll: false, url: 'https://github.com/Mysterious-Manoj/jenkins.git'
+                 git branch: 'main', changelog: false, credentialsId: 'classy-manoj', poll: false, url: 'https://github.com/Mysterious-Manoj/jenkins.git'
                 echo 'here we pulling the repo'
             }
         }
