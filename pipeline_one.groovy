@@ -4,7 +4,7 @@ pipeline {
       stage {
         stage('Pull') {
             step {
-                git branch: 'main', changelog: false, credentialsId: 'classy-manoj', poll: false, url: 'https://github.com/Mysterious-Manoj/jenkins.git'
+                https://github.com/Mysterious-Manoj/ansible-b1.git
                 echo 'here we pulling the repo'
             }
         }
