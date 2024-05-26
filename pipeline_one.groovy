@@ -4,7 +4,7 @@ pipeline {
       stages {
         stage('Pull') {
             steps {
-                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/Mysterious-Manoj/maven-web-application.git'
+                https://github.com/chetansomkuwar254/studentapp.ui.git
                 echo 'here we pulling the repo'
             }
         }
