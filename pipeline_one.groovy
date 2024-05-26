@@ -8,10 +8,6 @@ pipeline {
                 echo 'here we pulling the repo'
             }
         }
-        stage('build') {
-            step {
-                echo 'here we build the pipe'
-            }
-        }
+       
     }
 }
