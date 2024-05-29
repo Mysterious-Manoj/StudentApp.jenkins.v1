@@ -1,0 +1,7 @@
+{
+    "git.allowForcePush": true,
+    "git.confirmEmptyCommits": true,
+    "git.confirmForcePush": false,
+    "git.confirmSync": false,
+    "git.confirmNoVerifyCommit": false
+}
