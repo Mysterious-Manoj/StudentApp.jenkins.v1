@@ -18,14 +18,14 @@ pipeline {
             steps {
                sh 'mvn sonar:sonar \
                    -Dsonar.projectKey=student-ui \
-                   -Dsonar.host.url=http://35.178.49.96:9000 \
+                   -Dsonar.host.url=http://35.178.230.114:9000 \
                    -Dsonar.login=8262e22bbd953f784fddc566e798f921416c68ee'
                 echo 'here we are testing the code'
             }
         }
         stage('Deploy') {
             steps {
-                deploy adapters: [tomcat8(credentialsId: 'tomcat-cred', path: '', url: 'http://35.178.138.88:8080/')], contextPath: '/', war: '**/*.war'
+                deploy adapters: [tomcat8(credentialsId: 'tomcat-cred', path: '', url: 'http://18.169.162.40:8080/')], contextPath: '/', war: '**/*.war'
                 echo 'here we are Deploying the application'
             }
         }
